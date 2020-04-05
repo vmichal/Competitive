@@ -1,0 +1,4 @@
+Testing ESTAb-ATAd: 
+mkfifo /tmp/test
+for i in {0..10000} ; do echo Cycle $i ; ./a.out < /tmp/test | python3 test.py 2 > /tmp/test; done
+
